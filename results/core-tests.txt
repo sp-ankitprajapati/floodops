@@ -1,0 +1,38 @@
+✔ explicit timezone is required; impossible dates are rejected (2.9853ms)
+✔ restricted CAP scope is not silently published (0.536ms)
+✔ unsafe source URLs are never exposed as links (0.359ms)
+✔ malformed CAP enum is rejected (0.1895ms)
+✔ expiry cannot precede issue time (0.4244ms)
+✔ updates need references and chronological order (0.3307ms)
+✔ cross-sender cancellation references are rejected (0.1776ms)
+✔ duplicates do not create new warnings or activity records (11.041ms)
+✔ same identity with changed content cannot reuse approval (1.9477ms)
+✔ exercise messages cannot become actual reviews (0.8503ms)
+✔ Actual messages cannot be approved under the exercise replay (0.4946ms)
+✔ expiry is enforced at the exact boundary (0.5138ms)
+✔ future issue time cannot be reviewed using an earlier clock (0.6378ms)
+✔ unrelated hazards and unsupported languages do not produce tasks (1.4945ms)
+✔ a draft does not enable task completion (0.8648ms)
+✔ string approval is not a Boolean approval (0.5839ms)
+✔ source review and assignments are required (0.6325ms)
+✔ reviewed plan permits saved progress with a note (1.003ms)
+✔ changed assignment invalidates review (0.699ms)
+✔ changed organisation invalidates review (0.6286ms)
+✔ edited task content cannot reuse a previous plan hash (0.6142ms)
+✔ a cancellation revokes review and blocks subsequent progress (0.7197ms)
+✔ out-of-order cancellation still blocks a later-delivered original (0.5705ms)
+✔ Test cancellation cannot revoke an Actual warning (0.6003ms)
+✔ update invalidates old tasks and selects the new revision (0.8169ms)
+✔ restored records retain task progress and history but reset approval (1.2804ms)
+✔ restored task text cannot replace source-linked policy (0.713ms)
+✔ retrieval preserves sources and abstains without a matching note (0.9102ms)
+✔ AI draft guard rejects new numbers and movement instructions (0.4296ms)
+✔ AI draft must preserve a synthetic-exercise label (0.0768ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144.3773

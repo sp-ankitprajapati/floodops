@@ -1,0 +1,11 @@
+# Data, attribution and safety
+
+All bundled incident data is authored synthetic exercise data. It is not scraped from a real warning and must not be described as an operational test. Public preparedness sources retain their own rights and terms. The prototype stores adapted prompts and source links rather than reproducing guidance documents. There is no NDMA, SACHET, MIT or IIT Hyderabad endorsement, affiliation or data-service agreement.
+
+Workspace data stays in browser local storage on the current origin. It is not uploaded to the Site’s storage. Exports are user-triggered. No email, SMS, voice service, analytics SDK, payment provider or metered AI API is configured. Google Fonts is requested for visual styling. The optional writing experiment requests runtime/model files from jsDelivr and Hugging Face; the provided input is processed by a local Web Worker, not sent to an inference endpoint. The browser and model-hosting services can still receive ordinary download-request metadata.
+
+Store no beneficiary names, medical records, phone lists or actual emergency case details in this prototype. Names/roles entered for exercise review are self-reported. SHA-256 fingerprints detect source/task changes within the workflow but are not digital signatures or an authentication system. Imported JSON cannot carry trusted approval; it requires another review. Current-time mode still requires manual source verification and does not make the application operationally ready.
+
+The language model is optional and isolated from plan approval and task state. A first observed small-model output was `EXCEPT a re-evaluation of the event.` It was not a useful summary and omitted the exercise label. The guard was extended to withhold such output. These checks do not detect all semantic errors, omissions, fabricated locations or prompt injection. A useful future study needs independent source/draft pairs, expert raters, explicit failure criteria and multiple languages. No accuracy or robustness rate is claimed.
+
+Before field deployment: choose one institution, secure its permission, co-design with its coordinator and affected users, replace generic notes with approved local procedures, validate source provenance, implement authenticated backend roles, test loss of connectivity, rehearse updates/cancellations, and establish a maintained operational owner.

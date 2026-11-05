@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-05T07:32:50.863Z",
+  "stage": "working software prototype; no field deployment",
+  "automated": {
+    "command": "node --test tests/core.test.mjs",
+    "tests": 30,
+    "passed": 30,
+    "failed": 0,
+    "output": "core-tests.txt"
+  },
+  "browser": {
+    "operator": "AI agent conducting software QA; not a community participant",
+    "checks": [
+      "synthetic CAP import and checklist generation",
+      "namespaced CAP XML import",
+      "malformed CAP namespace rejection",
+      "cancellation disables the referenced warning checklist",
+      "role assignments and explicit review unlock progress",
+      "saved progress survives reopening; approval resets",
+      "source-linked evidence search"
+    ],
+    "fieldParticipants": 0
+  },
+  "localGeneration": {
+    "runtime": "Transformers.js 3.8.1; ONNX WebAssembly in browser",
+    "model": "Xenova/flan-t5-base",
+    "sampleCount": 1,
+    "input": "Bundled fictional exercise description and headline",
+    "output": "This is synthetic exercise data created for testing FloodOps.",
+    "observedGenerationMs": 1383,
+    "timingScope": "One observed generation after model loading; not download or total cold-start latency",
+    "judgment": "Faithful but minimal summary of this one synthetic input. No general accuracy, multilingual quality or operational suitability established.",
+    "earlierFailures": "Two FLAN-T5-small attempts omitted the exercise label; the initial observed wording was poor. The added exercise-label guard withheld the second attempt.",
+    "paidInferenceApiUsed": false
+  },
+  "limits": [
+    "No real-warning corpus evaluation",
+    "No community interviews, beneficiaries, pilot or emergency deployment",
+    "Imported sender is not authenticated; CAP parsing is a documented subset",
+    "Browser-local data and self-reported reviews are mutable",
+    "No live-feed monitoring or public alert delivery"
+  ],
+  "sha256": {
+    "dist/core.mjs": "46e01bf836e586f5533d4aea1a613c717199cc2336356207475b92c637975bf4",
+    "dist/cap.mjs": "a02cbc901a33ccf869d221bbecd7e6e5ccb00fa2fe20f153aa11931eb5e224c2",
+    "dist/policy.mjs": "72cc34ccee64a466e1815898121c8d5506f7ba17392192c4aeeba2b8acab0c47",
+    "dist/app.mjs": "2deff33ffb42552ec0a5e703abb4082b32527e06040bca18808702dc28037e05",
+    "dist/model-worker.mjs": "d46b3eee2757229ad4db81abed0d3bf759b93b36bf96f79c8fa537c7e76e2815",
+    "dist/ai-guard.mjs": "fe63103dcf69cd1c520f5f7683a3a3c8b1591d9af0de81eec500af11132b22a9",
+    "dist/index.html": "25ad74e5643a7e496d5d8b57a4f16e12b8ef340add580e797433818e89052a90",
+    "dist/style.css": "fb1d61ad3b808306e2b80254d0cec5e8086b29e0ae71e694850d49cc1eefc741",
+    "tests/core.test.mjs": "fb1d9377ebc8aca5c11282ed1f9d3663740671432a89dabc3d4d48ed9b3bc852"
+  }
+}
